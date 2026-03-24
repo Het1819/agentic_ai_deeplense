@@ -1,0 +1,9 @@
+# Simulation stack (install matching versions for your lenstronomy / pyHalo checkout)
+pillow>=10.0
+numpy>=1.23
+astropy>=6.0
+lenstronomy>=1.13.0
+mcfit>=0.0.3
+
+# Agent
+pydantic-ai-slim[openai]>=1.0
