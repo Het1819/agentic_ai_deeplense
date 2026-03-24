@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 
 from pydantic_ai import Agent, RunContext
+from pydantic_ai.models import Model
 
 from deeplense_agent.models import (
     ParameterValidationReport,
@@ -35,8 +36,11 @@ Tier hints from user language:
 Never claim you produced files until `execute_deeplense_simulation` returns paths."""
 
 
-def build_agent(model: str | None = None) -> Agent[AgentDeps, str]:
-    m = model or os.environ.get("DEEPLENSE_AGENT_MODEL", "openai:gpt-4o-mini")
+def build_agent(model: str | Model | None = None) -> Agent[AgentDeps, str]:
+    if model is not None:
+        m: str | Model = model
+    else:
+        m = os.environ.get("DEEPLENSE_AGENT_MODEL", "openai:gpt-4o-mini")
 
     agent: Agent[AgentDeps, str] = Agent(
         m,
