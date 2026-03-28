@@ -1,0 +1,57 @@
+{
+  "request": {
+    "tier": "model_ii",
+    "substructure": "cdm",
+    "num_images": 1,
+    "z_lens": 0.5,
+    "z_source": 1.0,
+    "main_halo_mass_solar": 1000000000000.0,
+    "H0": 70.0,
+    "Om0": 0.3,
+    "Ob0": 0.05,
+    "num_pix": 150,
+    "pixel_scale_arcsec": 0.05,
+    "psf_fwhm_arcsec": 0.087,
+    "background_rms": 0.01,
+    "axion_mass_eV": null,
+    "vortex_mass_solar": 30000000000.0,
+    "vortex_resolution": 100,
+    "n_sub_mean": 25,
+    "m_sub_min_solar": 1000000.0,
+    "m_sub_max_solar": 10000000000.0,
+    "cdm_mass_slope_beta": -0.9,
+    "euclid_num_pix": 64,
+    "seed": 7
+  },
+  "artifacts": [
+    {
+      "path": "D:\\Main Project\\DeepLense\\deeplense_agent_outputs\\notebook_demo_model_ii\\run_img_000.npy",
+      "format": "npy",
+      "shape": [
+        64,
+        64
+      ],
+      "dtype": "float64",
+      "tier": "model_ii",
+      "substructure": "cdm",
+      "z_lens": 0.5,
+      "z_source": 1.0,
+      "index": 0
+    },
+    {
+      "path": "D:\\Main Project\\DeepLense\\deeplense_agent_outputs\\notebook_demo_model_ii\\run_img_000.png",
+      "format": "png",
+      "shape": [
+        64,
+        64
+      ],
+      "dtype": "uint8",
+      "tier": "model_ii",
+      "substructure": "cdm",
+      "z_lens": 0.5,
+      "z_source": 1.0,
+      "index": 0
+    }
+  ],
+  "notes": []
+}
